@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="images/qalb-logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | QALB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+    }
+
+    header {
+      background-color: #088058;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: url('images/qalb-hero.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 60px 40px;
+      background-color: #fff;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f0f2f5;
+    }
+
+    .text, .image {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+    }
+
+    .text h2 {
+      color: #088058;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #088058;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+    }
+
+    footer .footer-col {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 4px 0;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    .copyright {
+      text-align: center;
+      background-color: #088058;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #088058;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        text-align: center;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      nav a {
+        padding: 15px 0;
+        border-top: 1px solid #088058;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <img src="images/qalb-logo.png" alt="QALB Logo">
+  </div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="admissions.html">Eligibility</a>
+<a href="events.html">Events</a>
+<a href="committee.html">Committee</a>
+<a href="blog.html">Blog</a>
+<a href="donate.html">Donate</a>
+<a href="volunteer.html">Volunteer</a>
+<a href="contact.html">Contact</a>
+</nav>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>About QALB</h1>
+</section>
+
+<section class="section">
+  <div class="text">
+    <h2>Our Mission</h2>
+    <p>
+      QALB is dedicated to empowering communities through sustainable development, education, and social support. We aim to improve the quality of life for vulnerable populations while promoting inclusive growth and equitable opportunities for all.
+    </p>
+  </div>
+  <div class="image">
+    <img src="images/mission.jpg" alt="Our Mission">
+  </div>
+</section>
+
+<section class="section">
+  <div class="image">
+    <img src="images/history.jpg" alt="Our History">
+  </div>
+  <div class="text">
+    <h2>Our History</h2>
+    <p>
+      QALB was founded in 2026 by a group of community leaders with a shared vision of creating impactful social programs. From humble beginnings, we have grown into a recognized organization with multiple ongoing initiatives in education, healthcare, and environmental conservation.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="text">
+    <h2>Our Impact</h2>
+    <p>
+      Over the years, QALB has supported thousands of beneficiaries through scholarships, health campaigns, and community development projects. Our programs focus on empowering youth, supporting women, and fostering resilience in underprivileged communities.
+    </p>
+  </div>
+  <div class="image">
+    <img src="images/impact.jpg" alt="Our Impact">
+  </div>
+</section>
+
+<footer>
+  <div class="footer-col">
+    <img src="images/qalb-logo.png" alt="QALB Logo" width="100"><br><br>
+    <strong>QALB Organization</strong><br>
+    P.O Box 5678, Nairobi, Kenya<br>
+    Email: info@qalb.org<br>
+    Phone: +254 700 123 456
+  </div>
+
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <a href="projects.html">Projects</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="donate.html">Donate</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/qalb"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://www.instagram.com/qalb"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/qalb"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+© 2026 Qalb Organization. All rights reserved.
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>

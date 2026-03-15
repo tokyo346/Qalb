@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Committee | Qalb Organization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('images/committee-bg.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: #088058;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img { height: 50px; }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .intro {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .intro h1 { color:#0a4da3; }
+
+    .intro p { max-width: 800px; margin: auto; font-size: 18px; line-height: 1.6; }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    h2 { color: #088058; text-align: center; }
+
+    .person {
+      text-align: center;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 280px;
+      background-color: #eaf4ff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .person img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .support-staff-toggle {
+      background-color: #088058;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .support-staff-content { display: none; margin-top: 20px; }
+
+    footer {
+      background-color: #088058;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+    }
+
+    footer .footer-col { flex: 1; min-width: 200px; margin: 10px; }
+    footer h4 { margin-bottom: 10px; font-size: 18px; }
+    footer a { color: white; text-decoration: none; display: block; margin: 4px 0; }
+    .social-icons a { margin-right: 10px; font-size: 20px; }
+
+    .copyright {
+      text-align: center;
+      background-color: #088058;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav { display: none; flex-direction: column; background-color: #088058; position: absolute; top: 70px; right: 0; width: 100%; max-height: 90vh; overflow-y: auto; text-align: center; }
+      nav.active { display: flex; }
+      nav a { padding: 15px 0; border-top: 1px solid #088058; margin: 0; }
+      .menu-toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/qalb-logo.png" alt="QALB Logo">
+  <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+  <nav id="nav-menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="admissions.html">Eligibility</a>
+<a href="events.html">Events</a>
+<a href="committee.html">Committee</a>
+<a href="blog.html">Blog</a>
+<a href="donate.html">Donate</a>
+<a href="volunteer.html">Volunteer</a>
+<a href="contact.html">Contact</a>
+</nav>
+  </nav>
+</header>
+
+<div class="intro">
+  <p>
+    At Qalb Organization, leadership is anchored in values, transparency, and community service. Meet the people driving our initiatives and supporting our mission.
+  </p>
+</div>
+
+<section>
+  <h2>Executive Director</h2>
+  <div class="person">
+    <img src="images/executive-director.jpg" alt="Executive Director">
+    <h3>Fatuma Ali</h3>
+    <p>Executive Director, Qalb Organization</p>
+  </div>
+</section>
+
+<section>
+  <h2>Program Managers & Senior Staff</h2>
+  <div class="group">
+    <div class="person">
+      <img src="images/program-manager1.jpg" alt="Ahmed Hassan">
+      <h3>Ahmed Hassan</h3>
+      <p>Program Manager – Education</p>
+    </div>
+    <div class="person">
+      <img src="images/program-manager2.jpg" alt="Grace Njeri">
+      <h3>Grace Njeri</h3>
+      <p>Program Manager – Health & Nutrition</p>
+    </div>
+    <div class="person">
+      <img src="images/senior-staff.jpg" alt="John Mwangi">
+      <h3>John Mwangi</h3>
+      <p>Senior Officer – Operations</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Board of Trustees</h2>
+  <div class="group">
+    <div class="person">
+      <img src="images/trustee1.jpg" alt="Aisha Mohamed">
+      <h3>Aisha Mohamed</h3>
+      <p>Chairperson</p>
+    </div>
+    <div class="person">
+      <img src="images/trustee2.jpg" alt="Peter Otieno">
+      <h3>Peter Otieno</h3>
+      <p>Trustee</p>
+    </div>
+    <div class="person">
+      <img src="images/trustee3.jpg" alt="Rose Wambui">
+      <h3>Rose Wambui</h3>
+      <p>Trustee</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Support Staff</h2>
+  <button class="support-staff-toggle" onclick="toggleSupport()">Show/Hide Support Staff</button>
+  <div class="support-staff-content" id="supportStaff">
+    <div class="group">
+      <div class="person">
+        <img src="images/support1.jpg" alt="Samuel Karanja">
+        <h3>Samuel Karanja</h3>
+        <p>Security Personnel</p>
+      </div>
+      <div class="person">
+        <img src="images/support2.jpg" alt="Hellen Auma">
+        <h3>Hellen Auma</h3>
+        <p>Chef</p>
+      </div>
+      <div class="person">
+        <img src="images/support3.jpg" alt="Esther Mugo">
+        <h3>Esther Mugo</h3>
+        <p>Office Nurse</p>
+      </div>
+      <div class="person">
+        <img src="images/support4.jpg" alt="Paul Oduor">
+        <h3>Paul Oduor</h3>
+        <p>Maintenance</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-col">
+    <img src="images/qalb-logo.png" alt="QALB Logo" width="100"><br><br>
+    <strong>Qalb Organization</strong><br>
+    Nairobi, Kenya<br>
+    Email: info@qalb.org<br>
+    Phone: +254 XXX XXX XXX
+  </div>
+
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">Blog</a>
+    <a href="volunteer.html">Volunteer</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+© 2026 Qalb Organization. All rights reserved.
+</div>
+
+<script>
+  function toggleSupport() {
+    const support = document.getElementById("supportStaff");
+    support.style.display = support.style.display === "none" || support.style.display === "" ? "block" : "none";
+  }
+
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

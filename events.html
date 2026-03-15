@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events | Qalb Organization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eaf4ff;
+    }
+
+    header {
+      background-color: #088058;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img { height: 50px; }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #088058;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+      }
+      nav.active { display: flex; }
+      nav a { display: block; padding: 15px 0; border-top: 1px solid #088058; margin: 0; }
+      .menu-toggle { display: block; }
+    }
+
+    .hero {
+      background: url('images/events-banner.jpg') no-repeat center center/cover;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .event-section {
+      padding: 50px 30px;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .event-img, .event-details { flex: 1; min-width: 300px; }
+    .event-img img { width: 100%; border-radius: 10px; }
+    .event-description { color:#088058; font-size: 18px; margin-bottom: 20px; }
+
+    .countdown-boxes {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .timer {
+      background: #088058;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 15px;
+      width: 100px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .timer span { display: block; font-size: 30px; font-weight: bold; margin-bottom: 5px; }
+
+    footer {
+      background-color: #088058;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+    }
+
+    footer .footer-col { flex: 1; min-width: 200px; margin: 10px; }
+    footer h4 { margin-bottom: 10px; font-size: 18px; }
+    footer a { color: white; text-decoration: none; display: block; margin: 4px 0; }
+    .social-icons a { margin-right: 10px; font-size: 20px; }
+
+    .copyright {
+      text-align: center;
+      background-color: #088058;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .event-section { flex-direction: column; padding: 30px 20px; }
+      .countdown-boxes { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div> <img src="images/qalb-logo.png" alt="QALB Logo"></div>
+  <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+  <nav id="nav-menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="admissions.html">Eligibility</a>
+<a href="events.html">Events</a>
+<a href="committee.html">Committee</a>
+<a href="blog.html">Blog</a>
+<a href="donate.html">Donate</a>
+<a href="volunteer.html">Volunteer</a>
+<a href="contact.html">Contact</a>
+</nav>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Upcoming Events</h1>
+</section>
+
+<!-- Event 1 -->
+<div class="event-section">
+  <div class="event-img">
+    <img src="images/community-drive.jpg" alt="Community Drive">
+  </div>
+  <div class="event-details">
+    <p class="event-description">Community Food & Education Drive</p>
+    <div class="countdown-boxes" data-date="2026-04-15T09:00:00">
+      <div class="timer"><span>0</span>Days</div>
+      <div class="timer"><span>0</span>Hours</div>
+      <div class="timer"><span>0</span>Minutes</div>
+      <div class="timer"><span>0</span>Seconds</div>
+    </div>
+  </div>
+</div>
+
+<!-- Event 2 -->
+<div class="event-section">
+  <div class="event-img">
+    <img src="images/volunteer-training.jpg" alt="Volunteer Training">
+  </div>
+  <div class="event-details">
+    <p class="event-description">Volunteer Training Session</p>
+    <div class="countdown-boxes" data-date="2026-05-01T10:00:00">
+      <div class="timer"><span>0</span>Days</div>
+      <div class="timer"><span>0</span>Hours</div>
+      <div class="timer"><span>0</span>Minutes</div>
+      <div class="timer"><span>0</span>Seconds</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-col">
+   <img src="images/qalb-logo.png" alt="QALB Logo" width="100"><br><br>
+    <strong>Qalb Organization</strong><br>
+    Heart of Mercy<br>
+    Nairobi, Kenya<br>
+    Email: info@qalb.org<br>
+    Phone: +254 XXX XXX XXX
+  </div>
+
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">Blog</a>
+    <a href="volunteer.html">Volunteer</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+ © 2026 Qalb Organization. All rights reserved.
+</div>
+
+<script>
+  // Countdown timers
+  function startCountdowns() {
+    document.querySelectorAll('.countdown-boxes').forEach(box => {
+      const dateStr = box.dataset.date;
+      const spans = box.querySelectorAll('span');
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const target = new Date(dateStr).getTime();
+        const diff = target - now;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        spans[0].innerText = days >= 0 ? days : 0;
+        spans[1].innerText = hours >= 0 ? hours : 0;
+        spans[2].innerText = minutes >= 0 ? minutes : 0;
+        spans[3].innerText = seconds >= 0 ? seconds : 0;
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    });
+  }
+
+  window.onload = startCountdowns;
+
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
